@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DecisionWheel</string>
+    <string name="title_activity_make_new_dice">makeNewDice</string>
+</resources>
