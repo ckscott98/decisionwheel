@@ -22,9 +22,9 @@ public class MakeNewDice extends AppCompatActivity {
     }
 
     public void rollDice(View view) {
-        EditText text1 = findViewById(R.id.option1);
-        EditText text2 = findViewById(R.id.option2);
-        EditText text3 = findViewById(R.id.option3);
+        EditText text1 = findViewById(R.id.option2);
+        EditText text2 = findViewById(R.id.option1);
+        EditText text3 = findViewById(R.id.option4);
         EditText text4 = findViewById(R.id.option4);
         EditText text5 = findViewById(R.id.option5);
         EditText text6 = findViewById(R.id.option6);

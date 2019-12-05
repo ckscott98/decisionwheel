@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void createNewWheel(View view) {
-        Toast toastWheel = Toast.makeText(this, "Option not available yet!", Toast.LENGTH_SHORT);
-        toastWheel.show();
+        Intent intent = new Intent(getApplicationContext(),wheelOptions.class);
+        startActivity(intent);
     }
 
     public void createNewCoin(View view) {
