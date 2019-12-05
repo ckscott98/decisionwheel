@@ -54,7 +54,7 @@ public class DiceDecision extends AppCompatActivity {
             accelVal = (float) Math.sqrt((double) (x*x + y*y + z*z));
             accelDiff = accelDiff * 0.9f + (accelVal - accelLast);
 
-            if(accelDiff > 12) {
+            if(accelDiff > 10) {
                 diceShook();
             }
         }
@@ -79,14 +79,12 @@ public class DiceDecision extends AppCompatActivity {
     }
 
     public void diceShook() {
-        if(accelDiff > 12) {
-            Toast toast = Toast.makeText(this, "phone shake registered", Toast.LENGTH_SHORT);
-            toast.show();
+            //Toast toast = Toast.makeText(this, "phone shake registered", Toast.LENGTH_SHORT);
+            //toast.show();
             Intent intent = new Intent(getApplicationContext(),diceDecisionMade.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             intent.putExtra("diceDecision", decision);
             startActivity(intent);
-        }
     }
 
 }
