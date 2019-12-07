@@ -13,7 +13,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginBottom="631dp"
         android:text="Welcome, User!"
-        android:textSize="30dp"
+        android:textSize="40dp"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,9 +25,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
-        android:layout_marginBottom="550dp"
+        android:layout_marginBottom="450dp"
         android:text="Make New:"
-        android:textSize="20dp"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,39 +35,39 @@
 
     <Button
         android:id="@+id/createDiceButton"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="464dp"
+        android:layout_marginBottom="400dp"
+        android:background="#1B649E"
         android:onClick="createNewDice"
         android:text="Dice Roll"
         android:textColor="@android:color/white"
-        android:background="#1B649E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/createWheelButton"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="464dp"
-        android:text="Wheel"
-        android:textColor="@android:color/white"
+        android:layout_marginBottom="400dp"
         android:background="#1B649E"
         android:onClick="createNewWheel"
+        android:text="Wheel"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/createDiceButton"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/createCoinButton"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="464dp"
-        android:text="Coin Flip"
-        android:textColor="@android:color/white"
+        android:layout_marginBottom="400dp"
         android:background="#1B649E"
         android:onClick="createNewCoin"
+        android:text="Coin Flip"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/createDiceButton" />
@@ -77,13 +77,56 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
-        android:layout_marginBottom="390dp"
+        android:layout_marginBottom="275dp"
         android:text="Saved:"
-        android:textSize="20dp"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createDiceButton" />
+
+    <Button
+        android:id="@+id/SavedFoodButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="225dp"
+        android:background="#1B649E"
+        android:text="Food"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/SavedWorkButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:background="#1B649E"
+        android:text="Work"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SavedFoodButton" />
+
+    <Button
+        android:id="@+id/SavedFreetimeButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp"
+        android:background="#1B649E"
+        android:text="Freetime"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SavedWorkButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
