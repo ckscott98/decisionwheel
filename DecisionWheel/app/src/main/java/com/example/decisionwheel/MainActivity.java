@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void createNewCoin(View view) {
-        Toast toastCoin = Toast.makeText(this, "Option not available yet!", Toast.LENGTH_SHORT);
-        toastCoin.show();
+        Intent intent = new Intent(getApplicationContext(), MakeNewCoin.class);
+        startActivity(intent);
     }
 }
