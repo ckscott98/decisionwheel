@@ -7,14 +7,14 @@
     tools:context=".MakeNewCoin">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/coinHead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="20dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Head:"
+        android:hint="Head:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.686"
@@ -37,40 +37,63 @@
         app:layout_constraintVertical_bias="0.797" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/coinTail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Tail:"
+        android:hint="Tail:"
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="292dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/coinHeadpic"
         android:layout_width="101dp"
         android:layout_height="92dp"
-        app:srcCompat="@drawable/coinhead"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="140dp" />
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/coinHead"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/coinhead" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/coinTailpic"
         android:layout_width="104dp"
         android:layout_height="94dp"
-        app:srcCompat="@drawable/cointail"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="273dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/coinTail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437"
+        app:srcCompat="@drawable/cointail" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginBottom="72dp"
         android:background="#1B649E"
+        android:onClick="cancelCoin"
         android:text="@android:string/cancel"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="611dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coinTailpic"
         tools:text="@android:string/cancel"
         tools:visibility="visible" />
 
@@ -78,9 +101,18 @@
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="72dp"
         android:background="#1B649E"
+        android:onClick="flipCoin"
         android:text="FLIP"
-        tools:layout_editor_absoluteX="272dp"
-        tools:layout_editor_absoluteY="611dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/coinTail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

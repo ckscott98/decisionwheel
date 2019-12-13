@@ -20,8 +20,8 @@ public class MakeNewCoin extends AppCompatActivity {
     }
 
     public void flipCoin(View view) {
-        EditText text1 = findViewById(R.id.option2);
-        EditText text2 = findViewById(R.id.option1);
+        EditText text1 = findViewById(R.id.coinHead);
+        EditText text2 = findViewById(R.id.coinTail);
 
         String[] s = {text1.getText().toString(), text2.getText().toString()};
 
@@ -30,4 +30,5 @@ public class MakeNewCoin extends AppCompatActivity {
         startActivity(intent);
 
     }
+
 }

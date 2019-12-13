@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MakeNewCoin"></activity>
+        <activity android:name=".coinDecisionMade"></activity>
+        <activity android:name=".coinDecision" />
+        <activity android:name=".MakeNewCoin" />
         <activity android:name=".wheelDecisionMade" />
         <activity android:name=".spinningWheel" />
         <activity android:name=".wheelOptions" />

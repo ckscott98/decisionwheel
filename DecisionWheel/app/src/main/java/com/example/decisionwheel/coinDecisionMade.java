@@ -2,19 +2,10 @@ package com.example.decisionwheel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.Random;
-
 
 public class coinDecisionMade extends AppCompatActivity {
 
@@ -24,7 +15,7 @@ public class coinDecisionMade extends AppCompatActivity {
         setContentView(R.layout.activity_coin_decision_made);
 
         Intent i = getIntent();
-        String decision = i.getStringExtra("diceDecision");
+        String decision = i.getStringExtra("coinDecision");
 
         TextView txt = findViewById(R.id.coinResultText);
         txt.setText(decision);
