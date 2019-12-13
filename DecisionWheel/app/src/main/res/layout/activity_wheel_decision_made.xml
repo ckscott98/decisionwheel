@@ -7,6 +7,18 @@
     tools:context=".wheelDecisionMade">
 
     <TextView
+        android:id="@+id/rollDiceText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Your decision is below!"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/wheelResultText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,12 +31,14 @@
 
     <Button
         android:id="@+id/homeButton"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="232dp"
-        android:layout_marginBottom="65dp"
+        android:layout_marginBottom="200dp"
+        android:background="#1B649E"
         android:onClick="goHome"
         android:text="Home"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
